@@ -1,0 +1,4 @@
+com\altran\framework\AbstractPandaPage.class
+com\altran\runner\CucumberTest.class
+com\altran\steps\GoogleSearchStep.class
+com\altran\pages\GooglePage.class
