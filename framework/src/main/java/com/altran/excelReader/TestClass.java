@@ -1,12 +1,12 @@
 package com.altran.excelReader;
 
-import java.util.List;
+import java.util.HashMap;
 import java.util.Map;
 
 public class TestClass {
 
     private String name;
-    private List data;
+    private Map<String,String> data;
 
     public String getName() {
         return name;
@@ -16,11 +16,15 @@ public class TestClass {
         this.name = name;
     }
 
-    public List getData() {
+    public TestClass() {
+        data = new HashMap<>();
+    }
+
+    public Map<String, String> getData() {
         return data;
     }
 
-    public void setData(List data) {
+    public void setData(Map<String, String> data) {
         this.data = data;
     }
 }

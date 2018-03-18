@@ -3,7 +3,7 @@ Feature: Google Searching
   I want to search Google,
   So that I can learn new things.
 
-  @automated @web @google @panda
+  @web @google @panda @automated
   Scenario: Simple Google search
     Given a web browser is on the Google page
     When the search phrase "panda" is entered
