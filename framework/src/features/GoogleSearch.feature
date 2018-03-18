@@ -6,6 +6,6 @@ Feature: Google Searching
   @web @google @panda @automated
   Scenario: Simple Google search
     Given a web browser is on the Google page
-    When the search phrase "panda" is entered
+    When the search phrase "1.0" is entered
     Then results for "panda" are shown
 

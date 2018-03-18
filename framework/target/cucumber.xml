@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="13.549272">
-<testcase classname="Google Searching" name="Simple Google search" time="13.549272">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="1.062894">
+<testcase classname="Google Searching" name="Simple Google search" time="1.062894">
 <system-out><![CDATA[Given a web browser is on the Google page...................................passed
-When the search phrase "panda" is entered...................................passed
+When the search phrase "1.0" is entered.....................................passed
 Then results for "panda" are shown..........................................passed
 ]]></system-out>
 </testcase>

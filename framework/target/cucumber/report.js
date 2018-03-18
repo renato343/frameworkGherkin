@@ -10,9 +10,6 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@automated"
-    },
-    {
       "name": "@web"
     },
     {
@@ -20,6 +17,9 @@ formatter.scenario({
     },
     {
       "name": "@panda"
+    },
+    {
+      "name": "@automated"
     }
   ]
 });
@@ -40,7 +40,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the search phrase \"panda\" is entered",
+  "name": "the search phrase \"1.0\" is entered",
   "keyword": "When "
 });
 formatter.match({
