@@ -5,6 +5,7 @@ import com.altran.pages.GooglePage;
 import cucumber.api.Scenario;
 import cucumber.api.java8.En;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GoogleSearchStep implements En {
 
@@ -17,9 +18,9 @@ public class GoogleSearchStep implements En {
 
         Before(new String[]{"@web"}, 0, 1, (Scenario scenario) -> {
 
-            //System.setProperty("webdriver.chrome.driver", "/Volumes/backup/dev/frameworkGherkin/frameworkGherkin/framework/chromedriver/chromedriver");
-            //System.setProperty("webdriver.chrome.driver", "E:\\gherkin\\plugin\\chromedriver.exe");
-            //driver = new ChromeDriver();
+            System.setProperty("webdriver.chrome.driver", "/Volumes/backup/dev/frameworkGherkin/frameworkGherkin/framework/chromedriver/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "E:\\gherkin\\plugin\\chromedriver.exe");
+            driver = new ChromeDriver();
         });
 
         Before(new String[]{"@google"}, 0, 10, (Scenario scenario) -> {

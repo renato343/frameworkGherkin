@@ -18,7 +18,9 @@ public class ExcelMapper {
 
     public Map<String, TestClass> testCaseList;
 
-    private static final String FILE_NAME = "/Volumes/backup/dev/frameworkGherkin/frameworkGherkin/framework/data.xlsx";
+
+    private static final String FILE_NAME = "E:\\frameworkGherkin\\data.xlsx";
+    //private static final String FILE_NAME = "/Volumes/backup/dev/frameworkGherkin/frameworkGherkin/framework/data.xlsx";
 
     public ExcelMapper() {
 
@@ -26,25 +28,23 @@ public class ExcelMapper {
         headers = new ArrayList();
         testCaseData = new ArrayList<>();
         testsList = new ArrayList<>();
-
-        FileInputStream excelFile = null;
-        readExcel(excelFile);
+        readExcel(FILE_NAME);
 
         testsList.forEach(testClass -> headers.forEach(header ->
             testCaseData.forEach(data->
                 testClass.getData().put(header,data))));
 
         testCaseList = new HashMap<>();
-
         testsList.forEach(test -> testCaseList.put(test.getName(),test));
 
     }
 
-    public void readExcel(FileInputStream excelFile){
+    public void readExcel(String pathToExcel){
 
 
         try {
-            excelFile = new FileInputStream(new File(FILE_NAME));
+            FileInputStream excelFile = new FileInputStream(new File(pathToExcel));
+
 
             Workbook workbook = new XSSFWorkbook(excelFile);
             Sheet datatypeSheet = workbook.getSheetAt(0);

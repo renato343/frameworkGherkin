@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="1.062894">
-<testcase classname="Google Searching" name="Simple Google search" time="1.062894">
-<system-out><![CDATA[Given a web browser is on the Google page...................................passed
-When the search phrase "1.0" is entered.....................................passed
-Then results for "panda" are shown..........................................passed
-]]></system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="2" time="0.726069">
+<testcase classname="Google Searching" name="Simple Google search" time="0.415422">
+<failure message="java.lang.IllegalStateException: The driver executable does not exist: E:\gherkin\plugin\chromedriver.exe&#13;&#10;&#9;at com.google.common.base.Preconditions.checkState(Preconditions.java:534)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;&#10;&#9;at com.altran.steps.GoogleSearchStep.lambda$new$0(GoogleSearchStep.java:23)&#13;&#10;&#9;at cucumber.runtime.java8.Java8HookDefinition.lambda$execute$0(Java8HookDefinition.java:49)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.java8.Java8HookDefinition.execute(Java8HookDefinition.java:47)&#13;&#10;&#9;at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)&#13;&#10;&#9;at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)&#13;&#10;&#9;at cucumber.api.TestStep.run(TestStep.java:83)&#13;&#10;&#9;at cucumber.api.TestCase.run(TestCase.java:58)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:80)&#13;&#10;&#9;at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:99)&#13;&#10;&#9;at cucumber.api.junit.Cucumber.runChild(Cucumber.java:41)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:108)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at org.junit.runner.JUnitCore.run(JUnitCore.java:137)&#13;&#10;&#9;at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)&#13;&#10;&#9;at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)&#13;&#10;&#9;at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)&#13;&#10;&#9;at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)&#13;&#10;"><![CDATA[Given a web browser is on the Google page...................................skipped
+When the search phrase "1.0" is entered.....................................skipped
+Then results for "panda" are shown..........................................skipped
+
+StackTrace:
+java.lang.IllegalStateException: The driver executable does not exist: E:\gherkin\plugin\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:534)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:329)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.altran.steps.GoogleSearchStep.lambda$new$0(GoogleSearchStep.java:23)
+	at cucumber.runtime.java8.Java8HookDefinition.lambda$execute$0(Java8HookDefinition.java:49)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.java8.Java8HookDefinition.execute(Java8HookDefinition.java:47)
+	at cucumber.runtime.HookDefinitionMatch.runStep(HookDefinitionMatch.java:17)
+	at cucumber.runner.UnskipableStep.executeStep(UnskipableStep.java:22)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:99)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:41)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:108)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+]]></failure>
+</testcase>
+<testcase classname="Login in NOS customer area" name="Successful Login on Area Cliente" time="0.310647">
+<skipped><![CDATA[Given I use Data from test case "Test Case 1"...............................pending
+And I open browser to "Login Page"..........................................skipped
+Then I click on "Iniciar Sessão"............................................skipped
+And I enter "Username" to "Email/Nome de utilizador"........................skipped
+And I enter "Password" to "Password"........................................skipped
+And I click on "Entrar".....................................................skipped
+]]></skipped>
 </testcase>
 </testsuite>
